@@ -4,6 +4,7 @@
  */
 package pytfinal;
 
+import vistas.MDImenuprincipal;
 import vistas.frmlogin;
 
 /**
@@ -20,7 +21,11 @@ public class PYTfinal {
         frmlogin login=new frmlogin();
         //lo  muestro
         login.setVisible(true);
-    }
+        
+        MDImenuprincipal loMDImenuprincipal=new MDImenuprincipal();
+        loMDImenuprincipal.setVisible(true);
+        
+                }
     
     
    
