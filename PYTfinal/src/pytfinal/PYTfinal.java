@@ -4,6 +4,8 @@
  */
 package pytfinal;
 
+import vistas.frmlogin;
+
 /**
  *
  * @author yendri
@@ -14,9 +16,12 @@ public class PYTfinal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+        // abrir la ventana del login
+        frmlogin login=new frmlogin();
+        //lo  muestro
+        login.setVisible(true);
     }
     
-    public void suMadre (){}
     
+   
 }
