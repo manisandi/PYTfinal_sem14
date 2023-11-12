@@ -130,19 +130,14 @@ public class frmlogin extends javax.swing.JFrame {
 
     private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
         String user = txtUser.getText();
-
-        char[] passwordChars = jfielPassword.getPassword();
-        String password = new String(passwordChars);
+        String password = new String(jfielPassword.getPassword());
 
         if ("admin".equals(user) && "123abc".equals(password)) {
-            JOptionPane.showMessageDialog(this, "Inicio de sesión exitoso");
-           } else{
-            JOptionPane.showMessageDialog(this,"datos de inicio de sesion incorrectos, favor ingreselos nuevamente");
-            MDImenuprincipal mdi = new MDImenuprincipal();
-            mdi.setVisible(true);
+            new MDImenuprincipal().setVisible(true);
             this.dispose();
+        } else {
+            JOptionPane.showMessageDialog(this, "datos de inicio de sesion incorrectos, favor ingreselos nuevamente");
         }
-
     }//GEN-LAST:event_btnLoginMouseClicked
 
     /**
